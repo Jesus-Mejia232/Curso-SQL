@@ -1,0 +1,49 @@
+Que es una entidad en SQL
+Las entidades son básicamente la representación, un ejemplo sería; Un dibujo de una casa
+el dibujo no sería la casa, el dibujo solamente sería una representación de la casa.
+
+La nomenclatura que se usa para representar las entidades se llama notación de chen 
+Notación de chen: 
+Tenemos la entidad casa, en la nomenclatura chen la representamos de la siguiente forma
+básicamente es con un cuadrado, con esto le decimos que es una entidad
+
+Ejemp: En una base de datos en una tienda en línea, las entidades pueden ser, clientes, proveedores, ordenes de 
+compra. 
+
+
+Qué es lo que una entidad hace que una entidad sea una entidad, sus atributos, es decir una casa no es una casa
+si no tubiera, ambiente ubicación, tamaño
+
+básicamente las entidades son los encabezados que iran en la base de datos
+
+Los atributos de una entidad los representamos con un ovalo, pero tenemos dos tipos de atributos.
+tenemos por un lado los atributos simples y por otro lado los compuestos, los simples son atributos que simplemente 
+tienen datos unicos no están compuestos por nada más, un ejemplo de estos atributos simples, puede ser:
+El precio de una casa: 100 dolares, nada más, solamente tiene eso. 
+
+Un atributo compuesto puede ser el ambiente, ya que este depende de otros "subatributos" un ambiente tiene un
+tamaño y un tipo de ambiente. La forma de representar estos atributos compuestos es, sacando una linea, dando 
+a entender que son compuestos
+
+Atributos multivalor, es decir: más de un valor, para representarlos se les hace un doble circulo, un doble óvalo
+
+A los atributos comunes los representamos con un óvalo, a los multivalor los representamos con dos óvalos
+
+Atributos derivados: Se puedem obtener con cualquier otra información, es decir, la antiguedad de la casa se puede 
+determinar con la fecha de la construcción. La ubicación se puede obtener con la dirección.
+Los atributos derivados los podemos identificar porque tienen un borde punteado
+
+Key(clave):Esto es una forma única de identificar algo. Los telefonos se identifican por el email. La "Key" 
+básicamente es la forma de identificar algo y hacerlo que sea único. No dejan de ser atributos, la forma de 
+identificarlas en la notación de chen, es poniendoles un subrayado, pero con el mismo óvalo 
+
+Ejercicio 1: Pensar una entidad que tenga 5 atributos, uno que sea multivalor, y uno que sea un key 
+
+entidad:empresa 
+atributos, multivalor: empleado
+        
+
+
+
+
+
