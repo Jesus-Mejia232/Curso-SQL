@@ -1,0 +1,12 @@
+# Filtrando por precio de producto:
+select * from turno_medico
+where price > 40$
+
+# Filtrando por ID de turno:
+select * from turno_medico
+where id_turnos = 3
+
+# Filtrando por ID de usuario:
+select * from turno_medico
+where id_usuario = 2
+

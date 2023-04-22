@@ -1,0 +1,34 @@
+turnos_medicos:
+id turno
+profesinal
+id usuario 
+motivo
+horario
+
+usuarios:
+id usuarios
+Nombre
+apellido
+Edad
+
+
+Las tablas se relacionan por las claves foraneas
+
+
+select FirstName as Nombre, LastName as apellido from Employees
+
+orden al hacer un order by asc en sql
+null
+numeros
+caracteres especiales 
+letras(orden alfabetico)
+
+
+
+select * FROM Products
+ORDER by ProductName asc NULL last #De esta forma le estamos diciendo a sql que ordene los valores nulos la final 
+incluso si ese valor debería ir antes por el order by     "asc"
+
+# Null first se usa para el order by desc, si se quiere ver de primero a los valores nulos
+select * FROM Products
+ORDER by ProductName desc NULL first
