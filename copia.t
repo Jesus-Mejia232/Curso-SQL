@@ -1,3 +1,5 @@
+#LINK - Instrucciones y conceptos de consultas
+
 # Así se elimina un producto
 delete from turnos_medicos:
 where id_turno = 2

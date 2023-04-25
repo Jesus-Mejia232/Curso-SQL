@@ -1,8 +1,9 @@
-Qué es una consulta?
-Es, básicamente hacerle una petición/busqeda a una base de datos 
-Una consulta tambien es todo lo que se le ordena a la base de datos, ya sea ordenar, agregar o eliminar datos
+#Qué es una consulta?
+R//: Es, básicamente hacerle una petición/busqueda a una base de datos 
+Una consulta tambien es todo lo que se le ordena a la base de datos, ya sea ordenar, agregar o eliminar 
+datos
 
- Creando una consulta en SQL:
+Creando una consulta en SQL:
 
  Select * #El asterisco en SQL es caracter universal para hacer referencia a que queremos TODO
 
