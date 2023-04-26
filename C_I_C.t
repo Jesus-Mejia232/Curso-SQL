@@ -1,6 +1,5 @@
-# LINK Conceptos e instrucciones de consultas:
+# LINK -  Conceptos e instrucciones de consultas:
 Las consultas en sql nos permiten, obtener y modificar datos dentro de la base de datos 
-
 
 
 #LINK - """ _________________Creando una consulta/query Con SELECT:__________________ """
@@ -119,3 +118,11 @@ WHERE NOT Country = "USA"
 AND
 NOT Country = "France"
 
+
+#LINK - Mostrando lo que el cliente quiere:
+SELECT * FROM Products
+WHERE NOT CategoryID = 6
+AND NOT SupplierID = 1
+AND NOT Price <=30
+ORDER BY RAMDON()
+LIMIT 3 # Sirve para mostrar solo 3 resultados
