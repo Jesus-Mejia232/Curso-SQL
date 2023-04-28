@@ -43,3 +43,31 @@ Se usa para indicar cuantos caracteres tiene la palabra que se está buscando, e
 SELECT * FROM Employees 
 WHERE LIKE LastName "_o__" # La cantidad de guines bajos dependerá de cuántos carácteres tenga la palabra
 
+#LINK - IS NOT NULL
+Con este operador de comparación podemos hacer que nos o no, los registros nulos 
+# Con esta consulta nos devolverá todos los nulos del campo "Productname"
+SELECT * FROM Products
+WHERE ProductnameIS NULL
+ORDER BY Productname ASC
+
+
+#NOTE - Operador lógico "IN"
+El IN viene a remplazar al or, ejemp:
+
+SELECT * FROM Products
+WHERE ProductID = 3
+OR ProductID = 2
+OR ProductID = 5
+
+En lugar de poner eso, pondremos: 
+SELECT * FROM Products
+WHERE ProductID IN (3,2,5) # Si se pone el "NOT" antes del "IN" nos devolverá todos los registros que no tengan esos datos
+
+
+#LINK - Funciones de agregación:
+Count(firstname) # Suma la cantidad de nombres que hay 
+Round(AVG(Price)) # (AVG)Me devuelve el promedio, (ROUND()) lo redondea, si dentro de "ROUND()" Después del primer argumento
+# Que le damos a redondear, ponemos una coma y le damos un número, será la cantidad de decimales que queremos que tenga
+SUM() # Suma todos los registros del campo 
+MIN(Price) #  Devuele el producto que menos valor tiene 
+MAX(Price) # Devuele el producto que más valor tiene 

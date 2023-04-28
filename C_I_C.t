@@ -62,6 +62,7 @@ SELECT SUM(Nombredecampo) as sumatotal FROM products
 ORDER BY price # Automaticamente se ordenará de forma asecendente
 ORDER BY price ASC # Como buena practica hay que poner la clausula "ASC"
 ORDER BY price DESC # Tambien se puede ordenar de forma descendente
+DATO : El order by siempre tiene que ir después de los operadores de comparación 
 
 # Gerarquías con el ORDER BY cuando se usa de forma ascendente:
 1)Null
