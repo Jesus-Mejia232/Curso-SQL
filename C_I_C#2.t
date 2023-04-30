@@ -64,10 +64,29 @@ SELECT * FROM Products
 WHERE ProductID IN (3,2,5) # Si se pone el "NOT" antes del "IN" nos devolverá todos los registros que no tengan esos datos
 
 
-#LINK - Funciones de agregación:
+#LINK - Funciones de agregación: --------------------------------
+
 Count(firstname) # Suma la cantidad de nombres que hay 
-Round(AVG(Price)) # (AVG)Me devuelve el promedio, (ROUND()) lo redondea, si dentro de "ROUND()" Después del primer argumento
-# Que le damos a redondear, ponemos una coma y le damos un número, será la cantidad de decimales que queremos que tenga
-SUM() # Suma todos los registros del campo 
-MIN(Price) #  Devuele el producto que menos valor tiene 
-MAX(Price) # Devuele el producto que más valor tiene 
+Round(AVG(Price)) # (AVG)Me devuelve el promedio, (ROUND()) lo redondea. 
+# Si, dentro de "ROUND()" Después del primer argumento Que le damos a redondear, ponemos una coma y le damos un número, será la cantidad 
+# de decimales que queremos que tenga.
+# Si, adicional a eso le ponemos que muestre el nombre del supplierID, mostrará el prime supplierID con ese digito 
+
+
+SUM() Suma todos los registros del campo. Si mostramos el nombre  
+MIN(Price)  Devuele el producto que menos valor tiene 
+MAX(Price)  Devuele el producto que mas valor tiene 
+
+Having El no se puede usar sin el group by, el having no trabaja con filas, solo con grupos 
+
+Estructura de como iria una consulta con el group by, having y order by:
+select * from Products
+WHERE
+group by
+having 
+order by
+limit 
+# No podemos meter una funcion de agregacion dentro de otra, de la misma, tampoco podemos usar un alias para meter esa funcion dentro de 
+# La otra funcion
+
+#LINK - Sub consultas SQLite
