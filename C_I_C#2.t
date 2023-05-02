@@ -85,8 +85,22 @@ WHERE
 group by
 having 
 order by
-limit 
+limit (cantidad limite)
 # No podemos meter una funcion de agregacion dentro de otra, de la misma, tampoco podemos usar un alias para meter esa funcion dentro de 
 # La otra funcion
+
+
+# GROUP BY 
+Sirve para agrupar por producto y suma la cantidad de lo que sea de ese producto 
+De la siguiente forma podemos sacar un promedio:
+SELECT ROUND(AVG(Price)) FROM Products # Con esta consulta nos arrojará el promedio de precios del campo "Price" el "ROUND()" Es para redondear
+
+SELECT SupplierID,ROUND(AVG(Price)) as promedio FROM Products
+GROUP BY SupplierID 
+ORDER BY promedio ASC # Con esta consulta le estamos diciendo a SQL que nos muestre le promeido de precios que maneja cada proveedor, y que lo 
+# Ordene de manera ascendente (Con el argumento "ASC"). Si se llega a seleccionar el campo "Nombre" pondrá el primer registro con ese ID
+
+
+# 
 
 #LINK - Sub consultas SQLite
