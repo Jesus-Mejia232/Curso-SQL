@@ -99,8 +99,14 @@ SELECT SupplierID,ROUND(AVG(Price)) as promedio FROM Products
 GROUP BY SupplierID 
 ORDER BY promedio ASC # Con esta consulta le estamos diciendo a SQL que nos muestre le promeido de precios que maneja cada proveedor, y que lo 
 # Ordene de manera ascendente (Con el argumento "ASC"). Si se llega a seleccionar el campo "Nombre" pondrá el primer registro con ese ID
-
-
-# 
-
-#LINK - Sub consultas SQLite
+# Para trabajar con condiciones en una funcion de agregación, se usa el "Having"
+No podemos usar el valor de una funcion de agregacion con otra funcion de agragcion 
+WHERE: Filtra registros
+HAVING: Filtra grupos(no podemos usar al having sin el group by)
+La estructura de la consulta seria:
+SELECT FROM
+WHERE
+GROUP BY
+HAVING
+ORDER BY
+lIMIT
