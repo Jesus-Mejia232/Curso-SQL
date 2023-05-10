@@ -22,4 +22,4 @@ FROM orderdetails # Comentarios de la consulta:
 -- Se pone el "Orderdetails.ProductID" Para hacer referencia dentro de la subconsulta que estamos llamando a una columna/campo de otra tabla 
 # ---- IMPORTANTE NO OLVIDAR PONER EL WHERE ----
 
-# Hay distintos tipos   
+# Hay distintos tipos de subconsultas 
