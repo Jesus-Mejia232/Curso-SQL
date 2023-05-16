@@ -7,5 +7,5 @@ Uno a muchos 1:n : Ejemplo; Un autor de libros puede tener varios libros, pero u
 
 Muchos a uno n:1 : Ejemplo; Muchos libros para un autor 
 
-Muchos a muchos n:m : Ejemplo; Una tabla de estudiantes y una tabla de cursos en una universidad, un estudiante puede tener
+Muchos a muchos n:m  Ejemplo; Una tabla de estudiantes y una tabla de cursos en una universidad, un estudiante puede tener
 varios cursos, y a su vez, un estudiante puede tener varios cursos 
